@@ -1,6 +1,6 @@
 {
     "name": "bis2bis/module-book-publishers",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Magento 2 module to manage book publishers and link them to products",
     "type": "magento2-module",
     "require": {
