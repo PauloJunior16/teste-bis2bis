@@ -28,7 +28,7 @@ Suporte ao PHP >=8.1.
 Passo a Passo da Instalação
 1. Instalar o Módulo
 Execute o comando abaixo para instalar o módulo via Composer:  
-``` composer require bis2bis/bookpublishers ```
+``` composer require bis2bis/module-book-publishers ```
 2. Executar os seguintes commandos do Magento:  
 ``` php bin/magento module:enable Bis2Bis_BookPublishers ```  
 ``` php bin/magento setup:upgrade ```  
