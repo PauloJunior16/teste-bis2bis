@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="bookpublishers_publishers_listing_data_source" xsi:type="string">
+                    Bis2Bis\BookPublishers\Model\ResourceModel\Publisher\Grid\Collection
+                </item>
+            </argument>
+        </arguments>
+    </type>
+
+    <virtualType name="Bis2Bis\BookPublishers\Model\ResourceModel\Publisher\Grid\Collection"
+                 type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">publisher_table</argument>
+            <argument name="resourceModel" xsi:type="string">Bis2Bis\BookPublishers\Model\ResourceModel\Publisher</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Bis2Bis\BookPublishers\Ui\DataProvider\PublisherFormDataProvider">
+        <arguments>
+            <argument name="publisherFactory" xsi:type="object">Bis2Bis\BookPublishers\Model\PublisherFactory</argument>
+            <argument name="resource" xsi:type="object">Bis2Bis\BookPublishers\Model\ResourceModel\Publisher</argument>
+        </arguments>
+    </type>
+</config>

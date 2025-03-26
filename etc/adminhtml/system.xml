@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="bis2bis" translate="label" sortOrder="100">
+            <label>Bis2Bis</label>
+        </tab>
+
+        <section id="book_publishers" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Book Publishers</label>
+            <tab>bis2bis</tab>
+            <resource>Bis2Bis_BookPublishers::config</resource>
+            <group id="general" translate="label" sortOrder="10">
+                <label>General Settings</label>
+                <field id="enable_feature" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Book Publishers Module</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,27 @@
+{
+    "name": "bis2bis/module-book-publishers",
+    "version": "1.0.0",
+    "description": "N/A",
+    "type": "magento2-module",
+    "require": {
+        "php": ">=8.1",
+        "magento/framework": "*"
+      },
+    "license": [
+        "Proprietary"
+    ],
+    "authors": [
+        {
+            "name": "Paulo Junior",
+            "email": "pcjsouza16@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Bis2Bis\\BookPublishers\\": ""
+        }
+    }
+}
